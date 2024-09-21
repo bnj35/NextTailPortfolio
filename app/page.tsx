@@ -1,13 +1,10 @@
 import React from 'react';
-import Header from './components/header';
 import Gallery from './components/gallery';
-import Button_back from './components/button_back';
 
 
 export default function Home() {
   return (
     <main>
-      <Header/>
       <div>
         <p className='px-10 mx-12 w-auto text-7xl my-20 tracking-wide leading-tight '>
         Hi I’m <strong>BNJ</strong> , <br/>
@@ -16,8 +13,6 @@ export default function Home() {
         </p>
       </div>
       <Gallery/>
-
-      <Button_back/>
 
     </main>
   );
