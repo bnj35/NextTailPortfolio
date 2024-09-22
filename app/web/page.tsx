@@ -15,7 +15,7 @@ export default function Home() {
       <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
 
 
-      <div className='max-w-max h-[70vh] flex gap-12 my-10'>
+      <div className='max-w-max h-[70vh] flex gap-12 my-10'id="carrousel">
 
       <CarrouselImg params={{ 
         ImgUrl: 'https://images.unsplash.com/photo-1725610588109-71d0def86e19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
