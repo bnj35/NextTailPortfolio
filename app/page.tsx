@@ -15,22 +15,22 @@ export default function Home() {
       <div className='px-10 py-10 flex flex-row gap-16 flex-wrap justify-center'>
 
         <Gallery params={{
-          ImgUrl: '/flink.png',
+          ImgUrl: '/web.jpg',
           CardLink: './web',
           CardText: 'Web Development'
         }}/>
         <Gallery params={{
-          ImgUrl: 'https://via.placeholder.com/500',
+          ImgUrl: '/graphism.jpg',
           CardLink: 'https://www.google.com',
           CardText: 'Graphic design'
         }}/>
         <Gallery params={{
-          ImgUrl: 'https://via.placeholder.com/500',
+          ImgUrl: '/3d.jpg',
           CardLink: 'https://www.google.com',
           CardText: '3D modelisation'
         }}/>
         <Gallery params={{
-          ImgUrl: 'https://via.placeholder.com/500',
+          ImgUrl: '/video.jpg',
           CardLink: 'https://www.google.com',
           CardText: 'Video/Motion'
         }}/>
@@ -38,8 +38,8 @@ export default function Home() {
 
         <div className='w-screen px-24 h-[40em] mb-36'>
           <a href="">
-            <img src='/about.jpg' alt='placeholder' className='w-full h-full object-cover my-5 rounded-[2em]'/>
-            <p>About me</p>
+            <img src='/about.jpg' alt='placeholder' className='w-full h-full object-cover mt-5 rounded-[2em]'/>
+            <p className='p-3 text-xl'>About me</p>
           </a>
         </div>
 
