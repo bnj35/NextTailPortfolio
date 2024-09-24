@@ -8,19 +8,39 @@ interface CarouselProps {
 export default function Carousel({ images }: CarouselProps) {
     const carouselRef = useRef<HTMLDivElement | null>(null);
 
+    const dragStart = (e: React.DragEvent<HTMLDivElement>) => {
+        e.preventDefault();
+        const dragStart = e.clientX;
+        const scrollLeft = carouselRef.current?.scrollLeft;
+        if (scrollLeft !== undefined) {
+            const handleDragMove = (e: MouseEvent) => {
+                if (carouselRef.current) {
+                    carouselRef.current.scrollLeft = scrollLeft + dragStart - e.clientX;
+                }
+            };
+            const handleDragEnd = () => {
+                document.removeEventListener('mousemove', handleDragMove);
+                document.removeEventListener('mouseup', handleDragEnd);
+            };
+            document.addEventListener('mousemove', handleDragMove);
+            document.addEventListener('mouseup', handleDragEnd);
+        }
+    }
+
 
     const handleMoveLeft = () => {
         if (!carouselRef.current) return;
-        carouselRef.current.scrollLeft -= 500; 
+        carouselRef.current.scrollLeft -= 490; 
         console.log('Move left:', { scrollLeft: carouselRef.current.scrollLeft });
     };
 
 
     const handleMoveRight = () => {
         if (!carouselRef.current) return;
-        carouselRef.current.scrollLeft += 500; 
+        carouselRef.current.scrollLeft += 490; 
         console.log('Move right:', { scrollLeft: carouselRef.current.scrollLeft });
     };
+
 
 
     return (
@@ -29,8 +49,8 @@ export default function Carousel({ images }: CarouselProps) {
                 <div
                     ref={carouselRef}
                     className="flex space-x-4 cursor-grab active:cursor-grabbing drag-none "
-                    style={{ scrollBehavior: 'smooth', overflowX: 'scroll', whiteSpace: 'nowrap' }} // Ensure the container is scrollable
-
+                    style={{ scrollBehavior: 'smooth', overflowX: 'hidden', whiteSpace: 'nowrap' }} // Ensure the container is scrollable
+                    onDragStart={dragStart}
                 >
                     {images.map((image, index) => (
                         <div key={index} className="min-w-[30em] ml-40">
