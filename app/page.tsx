@@ -12,6 +12,7 @@ export default function Home() {
         with a <em>passion for creating</em> and a <br/> <strong>polyvalent</strong> skill set.
         </p>
       </div>
+
       <div className='px-10 py-10 flex flex-row gap-16 flex-wrap justify-center'>
 
         <Gallery params={{
@@ -21,29 +22,27 @@ export default function Home() {
         }}/>
         <Gallery params={{
           ImgUrl: '/graphism.jpg',
-          CardLink: 'https://www.google.com',
+          CardLink: '#',
           CardText: 'Graphic design'
         }}/>
         <Gallery params={{
           ImgUrl: '/3d.jpg',
-          CardLink: 'https://www.google.com',
+          CardLink: '#',
           CardText: '3D modelisation'
         }}/>
         <Gallery params={{
           ImgUrl: '/video.jpg',
-          CardLink: 'https://www.google.com',
+          CardLink: '#',
           CardText: 'Video/Motion'
         }}/>
         </div>
 
-        <div className='w-screen px-24 h-[40em] mb-36'>
+        <div className='w-full px-24 h-[40em] mb-36'>
           <a href="">
-            <img src='/about.jpg' alt='placeholder' className='w-full h-full object-cover mt-5 rounded-[2em]'/>
+            <img src='/about.jpg' alt='placeholder' className='w-full h-full object-cover mt-5 rounded-[2em] saturate-0 hover:saturate-100 transition-all'/>
             <p className='p-3 text-xl'>About me</p>
           </a>
         </div>
-
-
     </main>
   );
 }

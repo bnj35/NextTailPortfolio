@@ -17,24 +17,11 @@ export default function Home() {
 
       <div className='max-w-max h-[70vh] flex gap-12 my-10'id="carrousel">
 
-      <CarrouselImg params={{ 
-        ImgUrl: 'https://images.unsplash.com/photo-1725610588109-71d0def86e19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        Description: 'Web Development',
-        Lien: 'https://www.google.com'
-      }}/>
-
-      <CarrouselImg params={{ 
-        ImgUrl: 'https://images.unsplash.com/photo-1725610588109-71d0def86e19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        Description: 'Web Development',
-        Lien: 'https://www.google.com'
-      }}/>
-
-      <CarrouselImg params={{ 
-        ImgUrl: 'https://images.unsplash.com/photo-1725610588109-71d0def86e19?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
-        Description: 'Web Development',
-        Lien: 'https://www.google.com'
-      }}/>
-      
+    <CarrouselImg params={{
+      ImgUrl: '/about.jpg',
+      Description: 'Description de l\'image',
+      Lien: '#'
+    }} />
 
 
     </div>

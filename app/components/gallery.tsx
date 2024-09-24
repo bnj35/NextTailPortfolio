@@ -9,7 +9,7 @@ export default function Gallery({params,}:{    params: {
 
       <div className='w-[45%]'>
         <a href={params.CardLink}>
-            <img className='aspect-square w-[100%] rounded-[2rem] object-cover'src={params.ImgUrl}></img>
+            <img className='aspect-square w-[100%] rounded-[2rem] object-cover saturate-0 hover:saturate-100 transition-all'src={params.ImgUrl}></img>
               <p className='p-3 text-xl'>{params.CardText}</p>
           </a>
       </div>
