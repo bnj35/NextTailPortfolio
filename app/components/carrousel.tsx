@@ -19,6 +19,7 @@ export default function Carousel({ images }: CarouselProps) {
                 }
             };
             const handleDragEnd = () => {
+                EndCarrousel();
                 document.removeEventListener('mousemove', handleDragMove);
                 document.removeEventListener('mouseup', handleDragEnd);
             };
@@ -31,15 +32,23 @@ export default function Carousel({ images }: CarouselProps) {
     const handleMoveLeft = () => {
         if (!carouselRef.current) return;
         carouselRef.current.scrollLeft -= 490; 
-        console.log('Move left:', { scrollLeft: carouselRef.current.scrollLeft });
     };
 
 
     const handleMoveRight = () => {
         if (!carouselRef.current) return;
         carouselRef.current.scrollLeft += 490; 
-        console.log('Move right:', { scrollLeft: carouselRef.current.scrollLeft });
+        EndCarrousel();
+    }
+
+    const EndCarrousel = () => {
+        if (!carouselRef.current) return;
+        if (carouselRef.current.scrollLeft === carouselRef.current.scrollWidth - carouselRef.current.clientWidth) {
+            console.log('Reached end of carousel');
+            carouselRef.current.scrollLeft = 0;
     };
+}
+
 
 
 
@@ -48,12 +57,13 @@ export default function Carousel({ images }: CarouselProps) {
             <div className=" overflow-hidden flex">
                 <div
                     ref={carouselRef}
-                    className="flex space-x-4 cursor-grab active:cursor-grabbing drag-none "
-                    style={{ scrollBehavior: 'smooth', overflowX: 'hidden', whiteSpace: 'nowrap' }} // Ensure the container is scrollable
+                    className="flex space-x-4 drag-none scrollbar-hide"
+                    style={{ scrollBehavior: 'smooth', overflowX: 'scroll', whiteSpace: 'nowrap' }} // Ensure the container is scrollable
                     onDragStart={dragStart}
                 >
+
                     {images.map((image, index) => (
-                        <div key={index} className="min-w-[30em] ml-40">
+                        <div key={index} className="min-w-[30em] ml-40 ">
                             <a href={image.Lien}>
                                 <img
                                     src={image.ImgUrl}
@@ -61,12 +71,12 @@ export default function Carousel({ images }: CarouselProps) {
                                     className="h-[40em] object-cover rounded-lg"
                                 />
                             </a>
-                            <p className="text-center mt-2">{image.Description}</p>
+                            <p className="mt-2 text-xl">{image.Description}</p>
                         </div>
                     ))}
                 </div>
             </div>
-            <div className='flex justify-end text-5xl mt-10 mr-10 gap-10 rounded-lg'>
+            <div className='flex justify-end text-5xl mt-10 mr-28 gap-10 rounded-lg'>
                 <button onClick={handleMoveLeft}>
                     <p> &lt; </p>
                 </button>
