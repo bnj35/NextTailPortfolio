@@ -22,17 +22,17 @@ export default function Home() {
         }}/>
         <Gallery params={{
           ImgUrl: '/graphism.jpg',
-          CardLink: '#',
+          CardLink: './graphism',
           CardText: 'Graphic design'
         }}/>
         <Gallery params={{
           ImgUrl: '/3d.jpg',
-          CardLink: '#',
+          CardLink: './3D',
           CardText: '3D modelisation'
         }}/>
         <Gallery params={{
           ImgUrl: '/video.jpg',
-          CardLink: '#',
+          CardLink: './Video',
           CardText: 'Video/Motion'
         }}/>
         </div>

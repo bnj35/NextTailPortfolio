@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <main>
       <div className='flex justify-center items-center'>
-        <p className='px-10 mx-12 w-auto text-[6rem] my-44 tracking-wide leading-tight '><strong>Web</strong> development</p>
+        <p className='px-10 mx-12 w-auto text-[6rem] my-44 tracking-wide leading-tight '><strong>Video</strong> and <em>Motion</em></p>
       </div>
 
       <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
@@ -28,12 +28,13 @@ export default function Home() {
 
     <div>
 
-      <h2 className='text-[4em] px-10 mx-12 my-20'>The <em>foundation</em> of my <br/><strong>coding adventure</strong></h2>
+      <h2 className='text-[4em] px-10 mx-12 my-20'>The <em>origin</em> of my <br/><strong>video journey</strong></h2>
 
         <p className='px-10 mx-12 w-auto text-5xl my-20 tracking-wide leading-tight '>
-        After graduating high school with honors, I began pursuing a Bachelor's degree in Technology at university, where I am currently 
-        studying multimedia and computer science. There, I started coding by developing web applications and creative websites, always
-        striving to achieve a strong aesthetic design through a deep focus on the UX and UI of my projects.
+        By the end of 2019, I began learning design and new software, which led me to 
+        start taking photos and videos for my work. I then learned how to edit and animate 
+        by creating motion designs for clients, working on projects at school, and doing it 
+        for fun on the side.
         </p>
 
       </div>
