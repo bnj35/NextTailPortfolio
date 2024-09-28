@@ -38,7 +38,7 @@ export default function Home() {
         </div>
 
         <div className='w-full px-24 h-[40em] mb-36'>
-          <a href="">
+          <a href="./about">
             <img src='/about.jpg' alt='placeholder' className='w-full h-full object-cover mt-5 rounded-[2em] saturate-0 hover:saturate-100 transition-all'/>
             <p className='p-3 text-xl'>About me</p>
           </a>
