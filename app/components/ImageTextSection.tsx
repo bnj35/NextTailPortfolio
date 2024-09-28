@@ -10,9 +10,13 @@ function ImageTextSection({params,}:{ params: {
 }
 ) {
   return (
-    <div className='flex justify-around'>
+    <div className='w-full  my-20 '>
+    <div className='flex justify-between gap-20 sm:flex-wrap-reverse lg:flex-nowrap'>
         <Text params={{Title: params.TextTitle, Text: params.TextContent}}/>
-        <img src={params.ImgSrc} alt={params.ImgAlt} className='w-[full] h-[34em] object-cover rounded-2xl'/>
+        <div className=' w-full'>
+        <img src={params.ImgSrc} alt={params.ImgAlt} className='h-full object-cover rounded-2xl'/>
+        </div>
+    </div>
     </div>
   )
 }

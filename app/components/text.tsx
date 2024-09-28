@@ -6,10 +6,10 @@ function Text({params,}:{    params: {
 }}) {
 
   return (
-    <div>
-        <h2 className='text-[4em] px-10 mx-12 my-20'>{params.Title}</h2>
+    <div className='w-full'>
+        <h2 className='mb-10 text-[4em] font-bold'>{params.Title}</h2>
 
-    <p className='px-10 mx-12 w-auto text-5xl my-20 tracking-wide leading-tight '>
+    <p className='w-auto mt-5 tracking-wide leading-tight sm:text-base md:text-2xl lg:text-4xl '>
     {params.Text}
     </p>
     </div>
