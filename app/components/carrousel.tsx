@@ -63,12 +63,12 @@ export default function Carousel({ images }: CarouselProps) {
                 >
 
                     {images.map((image, index) => (
-                        <div key={index} className="min-w-[30em] ml-40 ">
+                        <div key={index} className="min-w-[30em]">
                             <a href={image.Lien}>
                                 <img
                                     src={image.ImgUrl}
                                     alt={image.Description}
-                                    className="h-[40em] object-cover rounded-lg"
+                                    className="h-[35em] object-cover rounded-lg"
                                 />
                             </a>
                             <p className="mt-2 text-xl">{image.Description}</p>

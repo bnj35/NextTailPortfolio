@@ -4,15 +4,11 @@ import Carrousel from '../components/carrousel';
 
 export default function Home() {
   const images = [
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/about.jpg', Description: 'Ocean View', Lien: '#' },
-    { ImgUrl: '/graphism.jpg', Description: 'Mountain Peak', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/about.jpg', Description: 'Ocean View', Lien: '#' },
-    { ImgUrl: '/graphism.jpg', Description: 'Mountain Peak', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-  
+    { ImgUrl: '/web/ordi.png', Description: 'Portfolio 3D', Lien: '#' },
+    { ImgUrl: '/web/filter.jpg', Description: 'Filtre Monochrome CSS', Lien: '#' },
+    { ImgUrl: '/web/color.jpg', Description: 'Random Color Generator', Lien: '#' },
+    { ImgUrl: '/web/flink.jpg', Description: 'Flink', Lien: '#' },
+
 ];
   return (
     <main>
@@ -22,7 +18,7 @@ export default function Home() {
 
       <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
 
-      <div className='flex my-10'>
+      <div className='flex m-10'>
     <Carrousel images={images}/>
     </div>
 
