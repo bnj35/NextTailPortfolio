@@ -5,9 +5,9 @@ import Carrousel from '../components/carrousel';
 export default function Home() {
   const images = [
     { ImgUrl: '/3D/colier.jpg', Description: 'Necklace', Lien: '#' },
-    { ImgUrl: '/3D/bandana.jpg', Description: 'Bandanas', Lien: '#' },
     { ImgUrl: '/3D.jpg', Description: 'Figurine', Lien: '#' },
     { ImgUrl: '/3D/ordi.jpg', Description: 'Laptop', Lien: '#' },
+    { ImgUrl: '/3D/bandana.jpg', Description: 'Bandanas', Lien: '#' },
     { ImgUrl: '/3D.jpg', Description: 'Court School and Office', Lien: '#' },
 ];
   return (
