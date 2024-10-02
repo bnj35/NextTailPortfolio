@@ -8,7 +8,7 @@ export default function Home() {
     { ImgUrl: '/3D.jpg', Description: 'Figurine', Lien: '#' },
     { ImgUrl: '/3D/ordi.jpg', Description: 'Laptop', Lien: '#' },
     { ImgUrl: '/3D/bandana.jpg', Description: 'Bandanas', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Court School and Office', Lien: '#' },
+    { ImgUrl: '/3D/office.jpg', Description: 'Low poly Environment ', Lien: '#' },
 ];
   return (
     <main>

@@ -4,7 +4,7 @@ export default function Gallery({params,}:{    params: {
   ImgUrl: string;
   CardLink: string;
   CardText: string;
-}}) {
+}}){ 
   return (
 
       <div className='w-[45%]'>

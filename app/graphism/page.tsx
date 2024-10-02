@@ -4,7 +4,7 @@ import Carrousel from '../components/carrousel';
 
 export default function Home() {
   const images = [
-    { ImgUrl: '/graphism/bloody.jpg', Description: 'Bloody Poster', Lien: '#' },
+    { ImgUrl: '/graphism/bloody.jpg', Description: 'Bloody Poster', Lien: './graphism/bloody' },
     { ImgUrl: '/graphism/dessin.jpg', Description: 'Room Illustration', Lien: '#' },
     { ImgUrl: '/graphism.jpg', Description: 'Climbing Trip poster', Lien: '#' },
     { ImgUrl: '/graphism/FLOPPY.jpg', Description: 'Floppy disk poster', Lien: '#' },
