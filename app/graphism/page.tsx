@@ -4,10 +4,13 @@ import Carrousel from '../components/carrousel';
 
 export default function Home() {
   const images = [
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/about.jpg', Description: 'Ocean View', Lien: '#' },
-    { ImgUrl: '/graphism.jpg', Description: 'Mountain Peak', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
+    { ImgUrl: '/graphism/bloody.jpg', Description: 'Bloody Poster', Lien: '#' },
+    { ImgUrl: '/graphism/dessin.jpg', Description: 'Room Illustration', Lien: '#' },
+    { ImgUrl: '/graphism.jpg', Description: 'Climbing Trip poster', Lien: '#' },
+    { ImgUrl: '/graphism/FLOPPY.jpg', Description: 'Floppy disk poster', Lien: '#' },
+    { ImgUrl: '/graphism/amour.jpg', Description: 'Emotions', Lien: '#' },
+    { ImgUrl: '/graphism/algo.jpg', Description: 'Test AI', Lien: '#' },
+    { ImgUrl: '/graphism/commandes.jpg', Description: 'Works', Lien: '#' },
   
 ];
   return (
@@ -18,7 +21,7 @@ export default function Home() {
 
       <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
 
-      <div className='flex my-10'>
+      <div className='flex m-10'>
     <Carrousel images={images}/>
     </div>
 

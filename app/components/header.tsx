@@ -10,9 +10,6 @@ function Header() {
           <li>
             <a href='#'>About</a>
           </li>
-          <li>
-            <a href='#'>Projects</a>
-          </li>
         </ul>
       </nav>
     </div>
