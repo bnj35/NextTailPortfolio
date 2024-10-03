@@ -76,12 +76,16 @@ export default function Carousel({ images }: CarouselProps) {
                     ))}
                 </div>
             </div>
-            <div className='flex justify-end text-5xl mt-10 mr-28 gap-10 rounded-lg'>
+            <div className='flex justify-end text-5xl mt-10 mr-28 gap-5 rounded-lg'>
                 <button onClick={handleMoveLeft}>
-                    <p> &lt; </p>
+                <svg className="w-8 h-8 text-gray-400 transform -rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+</svg>
                 </button>
                 <button onClick={handleMoveRight}>
-                    <p> &gt; </p>
+                <svg className="w-8 h-8 text-gray-400 transform rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+    <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
+</svg>
                 </button>
             </div>
         </div>

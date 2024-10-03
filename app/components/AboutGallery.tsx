@@ -11,7 +11,7 @@ function AboutGallery({ images }: AboutGalleryProps) {
         {images.map((image, i) => (
         <div
             key={i}
-            className={`row-span-1 ${i === 2 ? "md:col-span-2" : ""}`}
+            className={`row-span-1 ${i === 2 || i === 5 ? "md:col-span-2" : ""}`}
         >
             <img
                 src={image.src}
