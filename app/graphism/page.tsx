@@ -6,9 +6,8 @@ export default function Home() {
   const images = [
     { ImgUrl: '/graphism/bloody.jpg', Description: 'Posters', Lien: './graphism/bloody' },
     { ImgUrl: '/graphism/dessin.jpg', Description: 'Room Illustration', Lien: '/graphism/illu' },
-    { ImgUrl: '/graphism/amour.jpg', Description: 'Emotions', Lien: '#' },
-    { ImgUrl: '/graphism/algo.jpg', Description: 'Test AI', Lien: '#' },
-    { ImgUrl: '/graphism/commandes.jpg', Description: 'Works', Lien: '/graphism/commandes' },
+    { ImgUrl: '/graphism/algo.jpg', Description: 'Test AI', Lien: '/graphism/IA' },
+    { ImgUrl: '/graphism/commandes.jpg', Description: 'Client order', Lien: '/graphism/commandes' },
   
 ];
   return (
