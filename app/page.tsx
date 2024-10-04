@@ -26,7 +26,7 @@ export default function Home() {
           CardText: 'Graphic design'
         }}/>
         <Gallery params={{
-          ImgUrl: '/3d.jpg',
+          ImgUrl: '/3D.jpg',
           CardLink: './3D',
           CardText: '3D modelisation'
         }}/>
