@@ -6,12 +6,9 @@ export default function Home() {
     return (
         <div className='sm:m-12 md:m-16'>
             <ImageTextSection params={{ImgSrc: '/web/sktechfab.jpg', 
-                ImgAlt: 'Ordi', 
-                TextTitle: 'Laptop', 
-                TextContent: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
-                
-
-                <Text params={{Title: 'Client Order', Text: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
+                ImgAlt: '3D Online Library', 
+                TextTitle: 'Sketchfab Clone', 
+                TextContent: 'One of the projects I completed during my studies was an online library of 3D models. I drew inspiration from Sketchfab while adhering to the requirements of the assignment. The project’s backend was built using PHP with the Slim framework, while the frontend was developed using vanilla JavaScript and the Three.js library to render the 3D models.'}}/>
         </div>
     )
 }
