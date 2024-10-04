@@ -8,10 +8,7 @@ export default function Home() {
             <ImageTextSection params={{ImgSrc: '/3D/Clay/FiguClay.jpg', 
                 ImgAlt: 'Figurine', 
                 TextTitle: 'Figurine', 
-                TextContent: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
-                
-
-                <Text params={{Title: 'Client Order', Text: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
+                TextContent: 'One of our class projects in 2023 was to create a video game using the Gdevelop online game engine. My teammate and I got deeply involved in the project, spending a lot of time developing this 2D platformer. I became so invested that I decided to model a figurine of the main character hitting a slime from the game, as a way to have a physical keepsake of the project.'}}/>
         </div>
     )
 }

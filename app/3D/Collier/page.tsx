@@ -10,10 +10,7 @@ export default function Home() {
             <ImageTextSection params={{ImgSrc: '/3D/Clay/neckClay.jpg', 
                 ImgAlt: 'Necklace', 
                 TextTitle: '3D Necklace', 
-                TextContent: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
-                
-
-                <Text params={{Title: 'Client Order', Text: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
+                TextContent: 'This project is one of the first 3D models I created. It was originally intended for use as a visual component of a drumkit that was ultimately never released. Nevertheless, this initial project allowed me to learn how to use the 3D software Blender, including modifiers and textures. The initial requirement took a back seat, giving way to a deeper exploration of the software and the world of 3D modeling.'}}/>               
         </div>
     )
 }

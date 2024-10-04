@@ -8,10 +8,7 @@ export default function Home() {
             <ImageTextSection params={{ImgSrc: '/3D/Clay/OrdiClay.jpg', 
                 ImgAlt: 'Ordi', 
                 TextTitle: 'Laptop', 
-                TextContent: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
-                
-
-                <Text params={{Title: 'Client Order', Text: 'Throughout my journey in the world of graphic design, I have had the opportunity to work on multiple client projects. Primarily in the music industry, I have created numerous posters and album covers in various styles and genres. This experience has provided me with significant skills and knowledge, which are valuable assets in a professional setting.'}}/>
+                TextContent: 'In my previous portfolio, which was built using Three.js—a JavaScript library for rendering 3D content on websites—I needed a low-poly computer model (with fewer faces) to ensure smooth performance. I created my own 3D model with a screen showcasing my work. To integrate it into the website, I exported a .glb file without lighting or a camera, allowing me to use the framework’s own cameras and lighting to create unique motion and lighting effects.'}}/>
         </div>
     )
 }
