@@ -2,17 +2,14 @@ import React from 'react';
 import Carrousel from '../components/carrousel';
 
 
+
 export default function Home() {
   const images = [
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/about.jpg', Description: 'Ocean View', Lien: '#' },
-    { ImgUrl: '/graphism.jpg', Description: 'Mountain Peak', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-    { ImgUrl: '/about.jpg', Description: 'Ocean View', Lien: '#' },
-    { ImgUrl: '/graphism.jpg', Description: 'Mountain Peak', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Beautiful Landscape', Lien: '#' },
-  
+    { ImgUrl: '/Video/BANI.jpg', Description: 'Announcement video for BANI', Lien: 'https://youtu.be/qoUhi17C2fo' },
+    { ImgUrl: '/Video/motionCours.jpg', Description: 'Motion School Project', Lien: 'https://www.youtube.com/watch?v=1ria9sT0-NE' },
+    { ImgUrl: '/Video/StoryHvdock.jpg', Description: 'Story Visualizer', Lien: 'https://www.instagram.com/stories/highlights/17991764828385375/' },
+    { ImgUrl: '/Video/motionDjavan1.jpg', Description: 'Album Post', Lien: 'https://www.instagram.com/p/CpBcZzeDAcq/' },
+    
 ];
   return (
     <main>
@@ -22,7 +19,7 @@ export default function Home() {
 
       <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
 
-      <div className='flex my-10'>
+      <div className='flex m-10'>
     <Carrousel images={images}/>
     </div>
 
