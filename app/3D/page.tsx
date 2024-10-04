@@ -4,10 +4,10 @@ import Carrousel from '../components/carrousel';
 
 export default function Home() {
   const images = [
-    { ImgUrl: '/3D/colier.jpg', Description: 'Necklace', Lien: '#' },
-    { ImgUrl: '/3D.jpg', Description: 'Figurine', Lien: '#' },
-    { ImgUrl: '/3D/ordi.jpg', Description: 'Laptop', Lien: '#' },
-    { ImgUrl: '/3D/office.jpg', Description: 'Low poly Environment ', Lien: '#' },
+    { ImgUrl: '/3D/colier.jpg', Description: 'Necklace', Lien: '/3D/Collier' },
+    { ImgUrl: '/3D.jpg', Description: 'Figurine', Lien: '/3D/Figurine' },
+    { ImgUrl: '/3D/ordi.jpg', Description: 'Laptop', Lien: '/3D/Ordi' },
+    { ImgUrl: '/3D/office.jpg', Description: 'Low poly Environment ', Lien: '/3D/LowPoly' },
 ];
   return (
     <main>

@@ -4,11 +4,11 @@ import Carrousel from '../components/carrousel';
 
 export default function Home() {
   const images = [
-    { ImgUrl: '/web.jpg', Description: 'Portfolio 3D', Lien: '#' },
-    { ImgUrl: '/web/filter.jpg', Description: 'Filtre Monochrome CSS', Lien: '#' },
-    { ImgUrl: '/web/color.jpg', Description: 'Random Color Generator', Lien: '#' },
-    { ImgUrl: '/web/flink.jpg', Description: 'Flink', Lien: '#' },
-    { ImgUrl: '/web/sktechfab.jpg', Description: 'Sketchfab Clone', Lien: '#' },
+    { ImgUrl: '/web.jpg', Description: 'Portfolio 3D', Lien: '/web/Portfolio' },
+    { ImgUrl: '/web/filter.jpg', Description: 'Filtre Monochrome CSS', Lien: '/web/Filtre' },
+    { ImgUrl: '/web/color.jpg', Description: 'Random Color Generator', Lien: '/web/Generator' },
+    { ImgUrl: '/web/flink.jpg', Description: 'Flink', Lien: '/web/Flink' },
+    { ImgUrl: '/web/sktechfab.jpg', Description: 'Sketchfab Clone', Lien: '/web/Clone' },
 
 ];
   return (
