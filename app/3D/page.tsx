@@ -1,5 +1,7 @@
 import React from 'react';
 import Carrousel from '../components/carrousel';
+import TitleSection from '../components/TitleSection';
+import TextSection from '../components/TextSection';
 
 
 export default function Home() {
@@ -11,26 +13,17 @@ export default function Home() {
 ];
   return (
     <main>
-      <div className='flex justify-center items-center'>
-        <p className='px-10 mx-12 w-auto text-[6rem] my-44 tracking-wide leading-tight '><strong>3D</strong> Modeling</p>
-      </div>
+    <TitleSection params={{ TextBold: '3D', TextItalic: '', Text: 'Modeling' }}/>
 
-      <h2 className='text-[4em] px-10 mx-12 py-5'>Discover my <strong>projects</strong></h2>
-
-      <div className='flex m-10'>
     <Carrousel images={images}/>
-    </div>
 
-    <div>
 
-      <h2 className='text-[4em] px-10 mx-12 my-20'>The <em>birth</em> of my <br/><strong>3D experience</strong></h2>
-
-        <p className='px-10 mx-12 w-auto text-5xl my-20 tracking-wide leading-tight '>
-        By the end of 2019, I began learning design and new software, which led me to start 3D modeling on my own to create raw material
-        for photo manipulation. This later helped me learn the JavaScript library, Three.js, enabling me to create immersive websites with integrated 3D elements.
-        </p>
-
-      </div>
+    <TextSection params={{   
+      TitleBold : '3D experience',
+    TitleItalic : 'birth',
+    TitleText : 'of my',
+    Text : 'By the end of 2019, I began learning design and new software, which led me to start 3D modeling on my own to create raw material for photo manipulation. This later helped me learn the JavaScript library, Three.js, enabling me to create immersive websites with integrated 3D elements.',
+    }}/>
 
     </main>
   );

@@ -53,6 +53,11 @@ export default function Carousel({ images }: CarouselProps) {
 
 
     return (
+
+        <div>
+        <h2 className='text-2xl px-2 mx-4 lg:text-[4em] lg:px-10 lg:mx-12 lg:py-5 '>Discover my <strong>projects</strong></h2>
+
+        <div className='flex lg:m-10 my-4 mx-4 '>
         <div className='w-full'>
             <div className=" overflow-hidden flex">
                 <div
@@ -63,12 +68,12 @@ export default function Carousel({ images }: CarouselProps) {
                 >
 
                     {images.map((image, index) => (
-                        <div key={index} className="min-w-[30em]">
+                        <div key={index} className="min-w-[20em] md:min-w-[25em] lg:min-w-[30em]">
                             <a href={image.Lien}>
                                 <img
                                     src={image.ImgUrl}
                                     alt={image.Description}
-                                    className="h-[35em] object-cover rounded-lg"
+                                    className="h-[25em] md:h-[30em] lg:h-[35em] object-cover rounded-lg"
                                 />
                             </a>
                             <p className="mt-2 text-xl">{image.Description}</p>
@@ -76,18 +81,20 @@ export default function Carousel({ images }: CarouselProps) {
                     ))}
                 </div>
             </div>
-            <div className='flex justify-end text-5xl mt-10 mr-28 gap-5 rounded-lg'>
+            <div className='flex justify-end text-5xl lg:mt-10 mt-6 md:mr-20 mr-10 lg:mr-28 gap-5 rounded-lg'>
                 <button onClick={handleMoveLeft}>
-                <svg className="w-8 h-8 text-gray-400 transform -rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-gray-400 transform -rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
 </svg>
                 </button>
                 <button onClick={handleMoveRight}>
-                <svg className="w-8 h-8 text-gray-400 transform rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
+                <svg className="lg:w-8 lg:h-8 w-6 h-6 text-gray-400 transform rotate-90 hover:text-gray-800 transition-all" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 8">
     <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 7 7.674 1.3a.91.91 0 0 0-1.348 0L1 7"/>
 </svg>
                 </button>
             </div>
         </div>
+    </div>
+    </div>
     );
 }
