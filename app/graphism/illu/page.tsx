@@ -11,7 +11,7 @@ const images = [
 
 export default function Home() {
     return (
-        <div className='sm:m-12 md:m-16'>
+        <div className='m-12 md:m-16'>
             <Text params={{Title: 'Office Illustration',
                             Text: 'A few years ago, I used to take a lot of train trips. During these journeys, I would draw frequently, and this sketch came out of that period. I found the character\'s relaxed posture amusing, so I decided to refine it and share it on social media.'}}/>
             <AboutGallery images={images}/>
