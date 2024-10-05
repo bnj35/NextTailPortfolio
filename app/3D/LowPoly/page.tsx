@@ -6,7 +6,7 @@ import ImageTextSection from '../../components/ImageTextSection'
 export default function Home() {
     return (
         <div className='m-8 md:m-12 lg:m-16'>
-            <ImageTextSection params={{ImgSrc: '/3D/clay/LowClay.jpg', 
+            <ImageTextSection params={{ImgSrc: '/3D/clay/lowClay.jpg', 
                 ImgAlt: 'LowPoly', 
                 TextTitle: 'LowPoly Environment', 
                 TextContent: 'During a Bachelor\'s of Technology program, students work on independent projects of varying lengths and undergo several assessments. One such project involved creating a 3D environment that could be explored using Spatial.io or a VR headset, with the aim of delivering an augmented reality experience.'}}/>
