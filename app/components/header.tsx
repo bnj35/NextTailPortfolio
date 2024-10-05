@@ -8,10 +8,7 @@ function Header() {
       <nav>
         <ul className='flex space-x-4'>
           <li>
-            <a href='https://www.instagram.com/bnj.jpeg/'>Instagram</a>
-          </li>
-          <li>
-            <a href='https://github.com/bnj35'>Github</a>
+            <a href='https://linktr.ee/bnj.jpeg'>Contact</a>
           </li>
         </ul>
       </nav>
