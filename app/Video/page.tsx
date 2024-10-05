@@ -10,7 +10,7 @@ export default function Home() {
     { ImgUrl: '/Video/BANI.jpg', Description: 'Announcement video for BANI', Lien: 'https://youtu.be/qoUhi17C2fo' },
     { ImgUrl: '/Video/motionCours.jpg', Description: 'Motion School Project', Lien: 'https://www.youtube.com/watch?v=1ria9sT0-NE' },
     { ImgUrl: '/Video/StoryHvdock.jpg', Description: 'Story Visualizer', Lien: 'https://www.instagram.com/stories/highlights/17991764828385375/' },
-    { ImgUrl: '/Video/motionDjavan1.jpg', Description: 'Album Post', Lien: 'https://www.instagram.com/p/CpBcZzeDAcq/' },
+    { ImgUrl: '/Video/MotionDjavan1.jpg', Description: 'Album Post', Lien: 'https://www.instagram.com/p/CpBcZzeDAcq/' },
     
 ];
   return (
