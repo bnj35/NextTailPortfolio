@@ -6,8 +6,8 @@ import AboutGallery from '@/app/components/AboutGallery'
 const images = [
     { src: '/graphism/bloody/affiche.jpg', alt: 'Bloody Poster' },
     { src: '/graphism.jpg', alt: 'Climbing Poster' },
-    { src: '/graphism/bloody/rebond.jpg', alt: 'Bloody Poster' },
-    { src: '/graphism/FLOPPY.jpg', alt: 'Bloody Poster' },
+    { src: '/graphism/bloody/rebond.jpg', alt: 'Rebond Poster' },
+    { src: '/graphism/FLOPPY.JPG', alt: 'Floppy Poster' },
     { src: '/graphism/bloody.jpg', alt: 'Bloody Poster' },
 ];
 
