@@ -3,7 +3,7 @@ import ImageTextSection from '../../components/ImageTextSection'
 
 export default function Home() {
     return (
-        <div className='sm:m-12 md:m-16'>
+        <div className='m-8 md:m-12 lg:m-16'>
             <ImageTextSection params={{ImgSrc: '/3D/Clay/OrdiClay.jpg', 
                 ImgAlt: 'Ordi', 
                 TextTitle: 'Laptop', 
