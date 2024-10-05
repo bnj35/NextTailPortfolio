@@ -13,7 +13,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className='px-10 py-10 flex flex-row gap-16 flex-wrap justify-center'>
+      <div className='p-5 gap-10 lg:p-10 flex flex-row lg:gap-16 flex-wrap justify-center'>
 
         <Gallery params={{
           ImgUrl: '/web.jpg',
